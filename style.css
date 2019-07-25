@@ -30,11 +30,7 @@ nav{
 
 /* Styling for the showcase :) */
 div.showcase{
-<<<<<<< HEAD
-    background: url('/images/crossfit_back_girl_120978_2560x1080.jpg') ;
-=======
     background: url('images/crossfit_back_girl_120978_2560x1080.jpg');
->>>>>>> 752314d9e7ac57fd181ddc3c7b3e3bc2353fc2c7
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,13 +113,10 @@ div#about{
         width: 30px;
     }
     div.showcase{
-<<<<<<< HEAD
-=======
         background: url('images/crossfit_back_girl_120978_2560x1080.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
->>>>>>> 752314d9e7ac57fd181ddc3c7b3e3bc2353fc2c7
         position: fixed;
         width: 100vw;
         height: 40vh; 
@@ -185,7 +178,6 @@ div#about{
         font-size: 40px;
     }
 }
-<<<<<<< HEAD
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -202,5 +194,4 @@ div#about{
         font-size: 60px;
     }
 }
-=======
->>>>>>> 752314d9e7ac57fd181ddc3c7b3e3bc2353fc2c7
+
