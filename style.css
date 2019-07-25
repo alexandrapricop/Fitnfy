@@ -29,7 +29,7 @@ ul a:hover{
 
 /* Styling for the showcase :) */
 div.showcase{
-    background: url('/images/crossfit_back_girl_120978_2560x1080.jpg');
+    background: url('images/crossfit_back_girl_120978_2560x1080.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
