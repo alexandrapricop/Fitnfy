@@ -32,13 +32,14 @@ nav{
 
 /* Styling for the showcase :) */
 div.showcase{
+    box-sizing: border-box;
     background: url('images/crossfit_back_girl_120978_2560x1080.jpg');
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 div.showcase h1{
     text-align: center;
@@ -59,7 +60,7 @@ div#about{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Smaller devices - smartphones */
-@media (min-width: 320px) and (max-width: 900px) {
+@media (max-width: 900px) {
 
     /* Styling for the navigation bar :)*/
     nav{
@@ -106,7 +107,8 @@ div#about{
         display: flex;
         padding: 20px;
         width: 100vw;
-        gap: 20px;
+        height: 300px;
+        gap: 10%;
     }
     .links{
         z-index: 200;
@@ -128,7 +130,6 @@ div#about{
         height: 400px;
         top:0;
         z-index: -1000;
-        overflow: hidden;
     }
     div.showcase h1{
         font-size: 25px;
@@ -138,7 +139,6 @@ div#about{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        border: 2px solid var(--purple);
         margin: 100px 10%;
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -200,10 +200,10 @@ div#about{
      div.text{
         display: flex;
         flex-direction: column;
-        border: 2px solid var(--purple);
         margin: 120px 10%;
         background-color: rgba(0, 0, 0, 0.5);
         gap: 50px;
+        overflow: hidden;
     }
     div.text p{
         color: white;
@@ -217,8 +217,8 @@ div#about{
     }
     .mobile-hidden{
         color: white;
+        border: none;
         background-color: black;
-        border: 2px solid white;
         align-self: center;
         width: 200px;
         padding: 20px;
