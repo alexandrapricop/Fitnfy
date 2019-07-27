@@ -1,10 +1,18 @@
 var menu = document.querySelector('.menu');
 var drop = document.querySelector('#list');
-console.log(drop);
+var upperMenu = document.querySelector('.mobile');
+var buttonAbout = document.querySelector('.mobile-hidden');
 
 function classToggle(){
     drop.classList.toggle('hidden');
     drop.classList.toggle('links');
+    upperMenu.classList.toggle('darken');
+}
+
+function moveToAbout(){
+    console.log(5);
+    window.scrollTo(100);
 }
 
 menu.addEventListener('click', classToggle);
+buttonAbout.addEventListener('click', moveToAbout);
