@@ -93,7 +93,7 @@ div.showcase h1{
       justify-content: center;
       background: rgb(0, 0, 0);
       border-top: 2px solid var(--purple);
-      height: 40vh;
+      height: 80vh;
   }
   #contact span{
       font-family: var(--showcase-font);
@@ -410,7 +410,7 @@ div.showcase h1{
         grid-column-end: 3;
     }
     #contact{
-        height: 70vh;
+        height: 80vh;
     }
     #about{
         height: 100vh;
