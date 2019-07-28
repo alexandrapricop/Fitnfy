@@ -113,7 +113,7 @@ div.showcase h1{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Smaller devices - smartphones */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     /* Styling for the navigation bar :)*/
     nav{
@@ -238,12 +238,11 @@ div.showcase h1{
 #programs,
 #trainers{
     display: grid;
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px;
     color: white;
-
     background: rgb(0, 0, 0);
     border-top: 2px solid var(--purple);
 }
@@ -278,7 +277,7 @@ div.showcase h1{
 
 /* Bigger devices - laptops  */
 
-@media (min-width: 900px){
+@media (min-width: 1300px){
 
     /* Styling for the navigation bar :)*/
     nav{
@@ -393,6 +392,26 @@ div.showcase h1{
 .cell:hover{
     background: var(--purple);
 }
+}
+@media (min-width:450px) and (max-width: 1300px) {
+    #trainers{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px;
+        color: white;
+        background: rgb(0, 0, 0);
+        border-top: 2px solid var(--purple);
+    }
+    .train_title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #about{
+        height: 50vh;
+    }
+
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
