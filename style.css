@@ -1,3 +1,11 @@
+@keyframes hide{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
 :root{
     --logo-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --showcase-font: 'Glegoo', serif;
@@ -11,17 +19,21 @@
     list-style: none;
     text-decoration: none;
 }
-div.container{
-    border: 3px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 /* Styling for the navigation bar :) */
 nav{
     top: 0;
     z-index: 1000;
-    width: 100%;
+    width: 100vw;
+}
+#button_fix{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    background: black;
+    color: white;
 }
 
 .logo{
@@ -43,21 +55,61 @@ div.showcase{
 }
 div.showcase h1{
     text-align: center;
-    color: var(--purple);
     font-family: var(--showcase-font);
     font-size: 50px;
+    color: var(--purple);
 }
 /* Styling for the About section */
 #about{
-    margin-top: 20px;
-    border: 2px solid red;
-    height: 100vh;
+    height: 60vh;
+    background: rgb(0, 0, 0);
+    border-top: 2px solid var(--purple);
 }
-.about_title{
+.about_title,
+.prog_title,
+.train_title,
+.cont_title{
     text-align: center;
-    font-size: 120px;
-    color: var(--purple);
+    font-size: 50px;
+    font-family: var(--showcase-font);
+    margin-top: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px var(--purple);
 }
+.about_par{
+    padding: 20px;
+    font-size: 20px;
+    font-family: var(--showcase-font);
+    color: white;
+    text-align: center;
+}
+/* Styling for the programs section*/
+.cont_title{
+    margin-bottom: 20px;
+}
+  #contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: rgb(0, 0, 0);
+      border-top: 2px solid var(--purple);
+      height: 40vh;
+  }
+  #contact span{
+      font-family: var(--showcase-font);
+      color: white;
+      text-align: center;
+  }
+  footer{
+      color: black;
+      font-family: var(--showcase-font);
+      font-size: 15px;
+      text-align: center;
+  }
+  .cell img{
+      width: 100%;
+  }
+  /* Styling for the trainers section*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Smaller devices - smartphones */
@@ -90,11 +142,12 @@ div.showcase h1{
     #list a{
         text-shadow: 1px 1px 0px var(--purple);
         text-decoration: none;
-        transition: all 0.5s;
+        transition: all 0.2s;
         align-self: center;
         font-size: 25px;
         color: white;
         width: 100%;
+        margin-bottom: 20px;
     }
     .hidden,
     .links{
@@ -105,16 +158,17 @@ div.showcase h1{
         text-align: center;
         list-style: none;
         font-size: 20px;
-        display: flex;
         padding: 20px;
         width: 100vw;
         height: 300px;
-        gap: 10%;
+        display: flex;
     }
     .links{
         z-index: 200;
+        display: flex;
     }
     .hidden{
+        visibility: collapse;
         opacity: 0;
     }
     div.line{
@@ -128,7 +182,7 @@ div.showcase h1{
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
-        height: 200px;
+        height: 400px;
         top:0;
         z-index: -1000;
     }
@@ -153,6 +207,71 @@ div.showcase h1{
     .mobile-hidden{
         display: none;
     }
+    .container{
+        background: black;
+        position: relative;
+    }
+    #about{
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        border-top: 2px solid var(--purple);
+    }
+    .about_title,
+    .prog_title,
+    .train_title,
+    .cont_title{
+        text-align: center;
+        font-size: 30px;
+        font-family: var(--showcase-font);
+        margin-top: 60px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0px var(--purple);
+    }
+    .about_par{
+        padding: 20px;
+        font-size: 20px;
+        font-family: var(--showcase-font);
+        color: white;
+        text-align: center;
+    }
+    /* Styling for the programs section*/
+#programs,
+#trainers{
+    display: grid;
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px;
+    color: white;
+
+    background: rgb(0, 0, 0);
+    border-top: 2px solid var(--purple);
+}
+.cell{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid var(--purple);
+    justify-content: center;
+    align-content: center;
+    font-family: var(--showcase-font);
+    padding: 15px;
+    transition: ease-in 0.5s;
+}
+.cell h1{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#button_fix{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    background: black;
+    color: white;
+}
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -191,6 +310,12 @@ div.showcase h1{
         text-shadow: 1px 1px 0px rgb(0, 0, 0);
         transform: scale(1.3);
     }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: var(--purple);
+    }
     /*Styling showcase*/
     div.showcase h1{
         font-size: 50px;
@@ -219,9 +344,10 @@ div.showcase h1{
         border: none;
         background-color: black;
         align-self: center;
-        width: 200px;
+        width: auto;
         padding: 20px;
         margin-bottom: 5%;
+        text-transform: uppercase;
         transition: all 0.5s;
     }
     .mobile-hidden:hover{
@@ -229,6 +355,44 @@ div.showcase h1{
         background-color: var(--purple);
         cursor: pointer;
     }
+#programs,
+#trainers{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    color: white;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    border-top: 2px solid var(--purple);
+}
+#trainers{
+    height: 150vh;
+}
+.prog_title,
+.train_title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.cell{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid var(--purple);
+    justify-content: center;
+    align-content: center;
+    font-family: var(--showcase-font);
+    padding: 15px;
+    transition: ease-in 0.5s;
+}
+.cell h1{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.cell:hover{
+    background: var(--purple);
+}
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
