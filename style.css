@@ -114,7 +114,7 @@ div.showcase h1{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Smaller devices - smartphones */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     /* Styling for the navigation bar :)*/
     nav{
@@ -278,7 +278,7 @@ div.showcase h1{
 
 /* Bigger devices - laptops  */
 
-@media (min-width: 1300px){
+@media (min-width: 900px){
 
     /* Styling for the navigation bar :)*/
     nav{
@@ -409,8 +409,11 @@ div.showcase h1{
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    #contact{
+        height: 70vh;
+    }
     #about{
-        height: 50vh;
+        height: 100vh;
     }
 
 }
