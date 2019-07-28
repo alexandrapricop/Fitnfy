@@ -410,7 +410,7 @@ div.showcase h1{
         grid-column-end: 3;
     }
     #contact{
-        height: 80vh;
+        height: 50vh;
     }
     #about{
         height: 150vh;
