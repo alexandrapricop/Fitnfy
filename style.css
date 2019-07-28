@@ -105,6 +105,7 @@ div.showcase h1{
       font-family: var(--showcase-font);
       font-size: 15px;
       text-align: center;
+      background: var(--purple);
   }
   .cell img{
       width: 100%;
@@ -130,7 +131,7 @@ div.showcase h1{
         width: 100vw;
     }
     .darken{
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0,1);
     }
     .moblogo{
         font-size: 40px;
@@ -151,7 +152,7 @@ div.showcase h1{
     }
     .hidden,
     .links{
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 1);
         box-sizing: border-box;
         flex-direction: column;
         transition: all 0.5s;
