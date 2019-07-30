@@ -1,8 +1,11 @@
+/* Variables */
 :root{
     --logo-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --showcase-font: 'Glegoo', serif;
     --purple:  rgb(234, 0, 255);
 }
+
+/* Reset CSS*/
 * {
     margin: 0;
     padding: 0;
@@ -11,30 +14,18 @@
     list-style: none;
     text-decoration: none;
 }
-/* Styling for the navigation bar :) */
+/* General styling */
 nav{
     top: 0;
     z-index: 1000;
     width: 100vw;
 }
-#button_fix{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    padding: 15px;
-    border-radius: 50%;
-    border: 2px solid var(--purple);
-    background: black;
-    color: white;
-}
-
 .logo{
     font-family: var(--logo-font);
     font-size: 50px;
     color: var(--purple);
     text-shadow: 1px 1px 0px rgb(255, 255, 255);
 }
-/* Styling for the showcase :) */
 div.showcase{
     top: 0;
     box-sizing: border-box;
@@ -51,7 +42,6 @@ div.showcase h1{
     font-size: 50px;
     color: var(--purple);
 }
-/* Styling for the About section */
 #about{
     max-height: 70vh;
     background: rgb(0, 0, 0);
@@ -75,200 +65,35 @@ div.showcase h1{
     color: white;
     text-align: center;
 }
-/* Styling for the programs section*/
-.cont_title{
-    margin-bottom: 20px;
-}
-  #contact{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: rgb(0, 0, 0);
-      border-top: 2px solid var(--purple);
-      max-height: 40vh;
-      padding-bottom: 10px;
-      height: 80vh;
-  }
-  #contact span{
-      font-family: var(--showcase-font);
-      color: white;
-      text-align: center;
-  }
-  footer{
-      color: black;
-      font-family: var(--showcase-font);
-      font-size: 15px;
-      text-align: center;
-      background: var(--purple);
-      display: flex;
-      flex-direction: column;
-  }
-  div.social{
-    align-self: center;
-    display:flex;
-    padding: 10px;
-    justify-content: space-evenly;
-    gap: 25px;
-}
-div.social a{
-    color: white;
-    transition: all 0.5s;
-}
-div.social a:hover{
-    color: rgb(54, 1, 70);
-    transform: scale(1.2);
-}
-  .cell img{
-      width: 100%;
-  }
-  #button_fix{
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    padding: 15px;
-    border-radius: 25px;
-    border: 2px solid var(--purple);
-    background: black;
-    color: white;
-    z-index: 10000;
-}
-  /* Styling for the trainers section*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Smaller devices - smartphones */
-@media (max-width: 900px) {
-
-    /* Styling for the navigation bar :)*/
-    nav{
-        position: absolute;
-    }
-    div.mobile{
-        justify-content: space-between;
-        box-sizing: border-box;
-        align-content: center;
-        transition: all 0.5s;
-        flex-direction: row;
-        display: flex;
-        padding: 20px;
-        width: 100vw;
-    }
-    .darken{
-        background-color: rgba(0, 0, 0,1);
-    }
-    .moblogo{
-        font-size: 40px;
-        width: 100%;
-    }
-    div.menu{
-        cursor: pointer;
-    }
-    #list a{
-        text-shadow: 1px 1px 0px var(--purple);
-        text-decoration: none;
-        transition: all 0.2s;
-        align-self: center;
-        font-size: 25px;
-        color: white;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .hidden,
-    .links{
-        background-color: rgba(0, 0, 0, 1);
-        box-sizing: border-box;
-        flex-direction: column;
-        transition: all 0.5s;
-        text-align: center;
-        list-style: none;
-        font-size: 20px;
-        padding: 20px;
-        width: 100vw;
-        height: 30vh;
-        display: flex;
-    }
-    .links{
-        z-index: 200;
-        display: flex;
-    }
-    .hidden{
-        visibility: collapse;
-        opacity: 0;
-    }
-    div.line{
-        border: 2px solid white;
-        margin-top: 4px;
-        width: 30px;
-    }
-    div.showcase{
-        background: url('images/crossfit_back_girl_120978_2560x1080.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 400px;
-        top:0;
-        z-index: -1000;
-    }
-    div.showcase h1{
-        font-size: 25px;
-        margin-top: 40px;
-    }
-     div.text{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 100px 10%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    div.text p{
-        color: white;
-        font-family: var(--showcase-font);
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    .mobile-hidden{
-        display: none;
-    }
-    .container{
-        background: black;
-        position: relative;
-    }
-    #about{
-        max-height: 100%;
-        background: rgb(0, 0, 0);
-        border-top: 2px solid var(--purple);
-    }
-    .about_title,
-    .prog_title,
-    .train_title,
-    .cont_title{
-        text-align: center;
-        font-size: 30px;
-        font-family: var(--showcase-font);
-        margin-top: 60px;
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 0px var(--purple);
-    }
-    .about_par{
-        padding: 20px;
-        font-size: 20px;
-        font-family: var(--showcase-font);
-        color: white;
-        text-align: center;
-    }
-    /* Styling for the programs section*/
 #programs,
 #trainers{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px;
     color: white;
     background: rgb(0, 0, 0);
     border-top: 2px solid var(--purple);
 }
+.cont_title{
+    margin-bottom: 20px;
+}
+div.text p{
+    color: white;
+    font-family: var(--showcase-font);
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    border-top: 2px solid var(--purple);
+    max-height: 40vh;
+    padding-bottom: 10px;
+    height: 80vh;
+}
+
 .cell{
     display: flex;
     flex-direction: column;
@@ -284,16 +109,169 @@ div.social a:hover{
     margin-top: 20px;
     font-size: 20px;
 }
-
+#contact span{
+    font-family: var(--showcase-font);
+    color: white;
+    text-align: center;
 }
+footer{
+    color: black;
+    font-family: var(--showcase-font);
+    font-size: 15px;
+    text-align: center;
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+}
+div.social{
+   align-self: center;
+   display:flex;
+   padding: 10px;
+   justify-content: space-evenly;
+   gap: 25px;
+}
+div.social a{
+   color: white;
+   transition: all 0.5s;
+}
+div.social a:hover{
+   color: rgb(54, 1, 70);
+   transform: scale(1.2);
+}
+.cell img{
+    width: 100%;
+}
+#button_fix{
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+   padding: 15px;
+   border-radius: 25px;
+   border: 2px solid var(--purple);
+   background: black;
+   color: white;
+   z-index: 10000;
+}
+/* Smaller devices - smartphones */
+@media (max-width: 900px) {
+    nav{
+        position: absolute;
+    }
+    div.menu{
+        cursor: pointer;
+    }
+    .hidden,
+    .links{
+        background-color: rgba(0, 0, 0, 1);
+        box-sizing: border-box;
+        flex-direction: column;
+        transition: all 0.5s;
+        text-align: center;
+        list-style: none;
+        font-size: 20px;
+        padding: 20px;
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+    }
+    .hidden{
+        visibility: collapse;
+        opacity: 0;
+    }
+    div.line{
+        border: 2px solid white;
+        margin-top: 4px;
+        width: 30px;
+    }
+    div.showcase{
+        width: 100vw;
+        height: 400px;
+        z-index: -1000;
+    }
+    div.showcase h1{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    #about{
+        max-height: 100%;
+    }
+    .about_title,
+    .prog_title,
+    .train_title,
+    .cont_title{
+        font-size: 30px;
+    }
+    #programs,
+    #trainers{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .mobile-hidden{
+        display: none;
+    }
+    div.mobile{
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-content: center;
+        transition: all 0.5s;
+        flex-direction: row;
+        display: flex;
+        padding: 20px;
+        width: 100vw;
+    }
+    .darken{
+        background-color: rgba(0, 0, 0,1);
+    }
+    div.text p{
+        font-size: 20px;
+    }
+    .moblogo{
+        font-size: 40px;
+        width: 100%;
+    }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
+    #list a{
+        text-shadow: 1px 1px 0px var(--purple);
+        transition: all 0.2s;
+        align-self: center;
+        font-size: 25px;
+        color: white;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .links{
+        z-index: 200;
+        display: flex;
+    }
+     div.text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 100px 10%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    div.container{
+        background: black;
+        position: relative;
+    }
+}
+/* Medium devices - tablets */
+@media (min-width:450px) and (max-width: 1300px) {
+    #trainers{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .train_title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #about{
+        max-height: 100%;
+        height: 50vh;
+    }
+}
 /* Bigger devices - laptops  */
-
 @media (min-width: 900px){
-
-    /* Styling for the navigation bar :)*/
     nav{
         flex-direction: row;
         position: fixed;
@@ -313,7 +291,6 @@ div.social a:hover{
     }
     #list a{
         color: white;
-        text-decoration: none;
         align-self: center;
         transition: all 0.5s;
         margin: 0 10px;
@@ -323,31 +300,19 @@ div.social a:hover{
         text-shadow: 1px 1px 0px rgb(0, 0, 0);
         transform: scale(1.3);
     }
-    div.container{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .cell:hover{
         background: var(--purple);
     }
-    /*Styling showcase*/
-    div.showcase h1{
-        font-size: 50px;
+    .prog_title,
+    .train_title{
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
-     div.text{
-        box-sizing: border-box;
-        padding: 10%;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        gap: 20px;
-    }
-    div.text p{
-        color: white;
-        font-family: var(--showcase-font);
-        text-align: center;
-        font-size: 50px;
-        margin-bottom: 30px;
+    #programs,
+    #trainers{
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 100vh;
     }
     span.logo{
         font-size: 70px;
@@ -368,69 +333,23 @@ div.social a:hover{
         background-color: var(--purple);
         cursor: pointer;
     }
-#programs,
-#trainers{
-    display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 30px;
-    color: white;
-    min-height: 100vh;
-    background: rgb(0, 0, 0);
-    border-top: 2px solid var(--purple);
-}
-.prog_title,
-.train_title{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-.cell{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 2px solid var(--purple);
-    justify-content: center;
-    align-content: center;
-    font-family: var(--showcase-font);
-    padding: 15px;
-    transition: ease-in 0.5s;
-}
-.cell h1{
-    margin-top: 20px;
-    font-size: 20px;
-}
-.cell:hover{
-    background: var(--purple);
-}
-}
-@media (min-width:450px) and (max-width: 1300px) {
-    #trainers{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+    div.text p{
+        font-size: 50px;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        padding: 30px;
-        color: white;
-        background: rgb(0, 0, 0);
-        border-top: 2px solid var(--purple);
+        background: var(--purple);
     }
-    .train_title{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    #contact{
-        height: 70vh;
-    }
-    #about{
-        max-height: 100%;
-        height: 50vh;
-    }
-    #about{
-        height: 150vh;
+     div.text{
+        box-sizing: border-box;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        gap: 20px;
     }
 
 }
-
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
