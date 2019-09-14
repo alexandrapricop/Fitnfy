@@ -131,6 +131,7 @@ div.social{
    gap: 25px;
 }
 div.social a{
+    margin:20px;
    color: white;
    transition: all 0.5s;
 }
