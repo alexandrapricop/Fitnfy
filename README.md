@@ -1,7 +1,6 @@
-# FrontEnd1
-Front-End project no.1
-This is my first completed front-end project on github.
-This is a landing page for a gym.
+# Fitnify - gym landing page
 
-What I used: HTML, CSS, JavaScript
+This is a landing page for a gym. 
+This is my first website and I realised it to develope and improve my HTML, CSS and Javascript skills
+
 
